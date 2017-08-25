@@ -1,0 +1,1 @@
+net stop "wlsvc 1212domain_1212Admin"
