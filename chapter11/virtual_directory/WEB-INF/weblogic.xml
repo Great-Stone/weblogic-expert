@@ -1,0 +1,6 @@
+<weblogic-web-app>
+    <virtual-directory-mapping>
+        <local-path>/app</local-path>
+        <url-pattern>/downloads/*</url-pattern>
+    </virtual-directory-mapping>
+</weblogic-web-app>
