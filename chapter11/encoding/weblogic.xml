@@ -1,0 +1,23 @@
+<weblogic-web-app>
+    <charset-params>
+        <input-charset>
+            <resource-path>/jsp/*</resource-path>
+            <java-charset-name>UTF-8</java-charset-name>
+        </input-charset>
+    </charset-params>
+    <!-- weblogci 8.1 -->
+    <!-- 
+    <jsp-descriptor>
+        <jsp-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </jsp-param>
+    </jsp-descriptor>
+    -->
+    <!-- weblogci 9+ -->
+    <!-- 
+    <jsp-descriptor>
+        <encoding>UTF-8</encoding>
+    </jsp-descriptor>
+    -->
+</weblogic-web-app>

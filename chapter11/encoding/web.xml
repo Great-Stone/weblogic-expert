@@ -1,0 +1,12 @@
+<web-app>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+    <mime-mapping>
+        <extension>jsp</extension>
+        <mime-type>test/jsp;charset=UTF=8</mime-type>
+    </mime-mapping>
+</web-app>

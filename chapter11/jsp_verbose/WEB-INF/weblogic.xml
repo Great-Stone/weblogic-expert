@@ -1,0 +1,5 @@
+<weblogic-web-app>
+    <jsp-descriptor>
+        <debug>true</debug>
+    </jsp-descriptor>
+</weblogic-web-app>
