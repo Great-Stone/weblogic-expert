@@ -1,0 +1,29 @@
+<!DOCTYPE weblogic-ejb-jar PUBLIC '-//BEA Systems, Inc.//DTD WebLogic 8.1.0 EJB//EN' 'http://www.bea.com/servers/wls810/dtd/weblogic-ejb-jar.dtd'>
+<!-- Generated XML! -->
+<weblogic-ejb-jar>
+    <weblogic-enterprise-bean>
+        <ejb-name>SampleMDBBean</ejb-name>
+        <message-driven-descriptor>
+            <pool></pool>
+            <destination-jndi-name>MyMDBQueue</destination-jndi-name>
+            <initial-context-factory>com.sun.jndi.fscontext.RefFSContextFactory</initial-context-factory>
+            <provider-url>file:///tmp/JNDI-Directory</provider-url>
+            <connection-factory-jndi-name>ReceiverQCF</connection-factory-jndi-name>
+        </message-driven-descriptor>
+        <transaction-descriptor>
+            <trans-timeout-seconds>300</trans-timeout-seconds>
+        </transaction-descriptor>
+        <reference-descriptor>
+            <resource-description>
+                <res-ref-name>WLSenderQCF</res-ref-name>
+                <jndi-name>jms/WLSenderQCF</jndi-name>
+            </resource-description>
+            <resource-description>
+                <res-ref-name>WLMyReplyQueue</res-ref-name>
+                <jndi-name>jms/WLMyReplyQueue</jndi-name>
+            </resource-description>
+        </reference-descriptor>
+        <jndi-name>SampleMDBBean</jndi-name>
+        <remote-client-timeout>0</remote-client-timeout>
+    </weblogic-enterprise-bean>
+</weblogic-ejb-jar>

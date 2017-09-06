@@ -1,0 +1,26 @@
+<!DOCTYPE ejb-jar PUBLIC '-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans2.0//EN' 'http://java.sun.com/dtd/ejb-jar_2_0.dtd'>
+<!-- Generated XML! -->
+<ejb-jar>
+    <enterprise-beans>
+        <message-driven>
+            <ejb-name>SampleMDBBean</ejb-name>
+            <ejb-class>com.ibm.WLSampleMDB.SampleMDBBean</ejb-class>
+            <transaction-type>Container</transaction-type>
+            <message-driven-destination>
+                <destination-type>javax.jms.Queue</destination-type>
+            </message-driven-destination>
+            <resource-ref>
+                <res-ref-name>WLSenderQCF</res-ref-name>
+                <res-type>javax.jms.QueueConnectionFactory</res-type>
+                <res-auth>Application</res-auth>
+                <res-sharing-scope>Unshareable</res-sharing-scope>
+            </resource-ref>
+            <resource-ref>
+                <res-ref-name>WLMyReplyQueue</res-ref-name>
+                <res-type>javax.jms.Queue</res-type>
+                <res-auth>Application</res-auth>
+                <res-sharing-scope>Unshareable</res-sharing-scope>
+            </resource-ref>
+        </message-driven>
+    </enterprise-beans>
+</ejb-jar>
