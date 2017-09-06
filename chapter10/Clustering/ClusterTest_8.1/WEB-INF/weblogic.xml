@@ -1,0 +1,9 @@
+<weblogic-web-app>
+    <context-root>/</context-root>
+    <session-descriptor>
+        <session-param>
+            <param-name>PersistentStoreType</param-name>
+            <param-value>replicated_if_clustered</param-value>
+        </session-param>
+    </session-descriptor>
+</weblogic-web-app>
